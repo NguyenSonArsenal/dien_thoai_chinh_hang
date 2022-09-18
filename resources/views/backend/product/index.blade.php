@@ -46,20 +46,6 @@
 
                                     <div class="col-md-2">
                                         <div class="my-select2">
-                                            <select class="my-select2__select2 select2-wrapper" name="branch_id">
-                                                <option selected readonly value="">--- Thương hiệu ---</option>
-                                                @foreach($branch as $item)
-                                                    <option value="{{ arrayGet($item, 'id') }}"
-                                                            {{ request('branch_id') == arrayGet($item, 'id') ? "selected" : '' }}>
-                                                        {{ arrayGet($item, 'name') }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <div class="my-select2">
                                             <select class="my-select2__select2 select2-wrapper" name="hot">
                                                 <option selected readonly value="">--- SP Nổi bật ---</option>
                                                 <option value="{{ getConfig('product-hot') }}"

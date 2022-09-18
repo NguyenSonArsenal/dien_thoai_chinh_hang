@@ -8,9 +8,9 @@
     </div>
     <div class="section-detail">
         <div class="detail">
-            <h3 class="r" style="text-align: center;">Cửa hàng mũ bảo hiểm chính </h3>
+            <h3 class="r" style="text-align: center;">Cửa hàng điện thoại chính hãng</h3>
             <p style="text-align: center;"><strong>Địa chỉ:</strong>Hà Nội<br/><strong>Điện thoại</strong>: 0123456789<br/><strong>Email</strong>:
-                mubaohiem@gmail.com</p>
+                dienthoaichinhhang@gmail.com</p>
         </div>
     </div>
 

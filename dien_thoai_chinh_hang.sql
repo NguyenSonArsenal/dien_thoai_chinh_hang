@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th9 18, 2022 lúc 07:10 AM
+-- Thời gian đã tạo: Th9 18, 2022 lúc 04:28 PM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -277,7 +277,32 @@ INSERT INTO `product` (`id`, `category_id`, `name`, `price_origin`, `price_sell`
 (59, 5, 'Vivo Y21', '3990000.00', '3511200.00', 12, 'backend/upload/product/1663476969_vivo-y21-white-01-1-600x600.jpg', 2, NULL, '2022-09-18 04:56:09', '2022-09-18 04:56:09', NULL),
 (60, 5, 'Vivo Y22', '5000000.00', '4900000.00', 2, 'backend/upload/product/1663476986_vivo-y16-den.jpg', 2, NULL, '2022-09-18 04:56:26', '2022-09-18 04:56:26', NULL),
 (61, 5, 'Vivo V23 5G', '12990000.00', '10521900.00', 19, 'backend/upload/product/1663477008_vivo_v23_03.jpg', 2, NULL, '2022-09-18 04:56:48', '2022-09-18 04:56:48', NULL),
-(62, 5, 'Vivo X60 Pro 5G', '19990000.00', '13193400.00', 34, 'backend/upload/product/1663477025_vivo-x60-pro-8.jpg', 2, NULL, '2022-09-18 04:57:05', '2022-09-18 04:57:05', NULL);
+(62, 5, 'Vivo X60 Pro 5G', '19990000.00', '13193400.00', 34, 'backend/upload/product/1663477025_vivo-x60-pro-8.jpg', 2, NULL, '2022-09-18 04:57:05', '2022-09-18 04:57:05', NULL),
+(63, 6, 'Nokia X10 5G', '5490000.00', '4611600.00', 16, 'backend/upload/product/1663510534_nokia-x10.jpg', 2, NULL, '2022-09-18 14:15:34', '2022-09-18 14:15:34', NULL),
+(64, 6, 'Nokia G11 Plus 3GB 64GB', '3590000.00', '2979700.00', 17, 'backend/upload/product/1663510555_nokia-g11-plus-blue.jpg', 2, NULL, '2022-09-18 14:15:55', '2022-09-18 14:15:55', NULL),
+(65, 6, 'Nokia 8210 4G', '1490000.00', '1490000.00', 0, 'backend/upload/product/1663510573_nokia-8210_4g-sand-front_back-int.png', 2, NULL, '2022-09-18 14:16:13', '2022-09-18 14:16:13', NULL),
+(66, 6, 'Nokia G50 (5G)', '6490000.00', '6490000.00', 0, 'backend/upload/product/1663510592_nokia-g50-4_1.jpeg', 2, NULL, '2022-09-18 14:16:32', '2022-09-18 14:16:32', NULL),
+(67, 6, 'Nokia 105 2 SIM (2019)', '500000.00', '500000.00', 0, 'backend/upload/product/1663510607_ae08c25c6e913812f2fd60aca318bd8a_1.jpg', 2, NULL, '2022-09-18 14:16:47', '2022-09-18 14:16:47', NULL),
+(68, 6, 'Nokia G21', '4290000.00', '3603600.00', 16, 'backend/upload/product/1663510626_thumb_602966_default_big.jpg', 2, NULL, '2022-09-18 14:17:06', '2022-09-18 14:17:06', NULL),
+(69, 6, 'Nokia 2660 Flip', '1590000.00', '1590000.00', 0, 'backend/upload/product/1663510641_fwfu.png', 2, NULL, '2022-09-18 14:17:21', '2022-09-18 14:17:21', NULL),
+(70, 6, 'Nokia C21 Plus 3GB 32GB', '2990000.00', '2691000.00', 10, 'backend/upload/product/1663510688_nokia-c21-plus-600x600_2.jpg', 2, NULL, '2022-09-18 14:18:08', '2022-09-18 14:18:08', NULL),
+(71, 6, 'Nokia C20', '2490000.00', '2091600.00', 16, 'backend/upload/product/1663510706_nokia-c20-2.jpg', 2, NULL, '2022-09-18 14:18:26', '2022-09-18 14:18:26', NULL),
+(72, 6, 'Nokia C30', '3450000.00', '2380500.00', 31, 'backend/upload/product/1663510725_637649100605269420_nokia-c30-xanh-1.jpg', 2, NULL, '2022-09-18 14:18:45', '2022-09-18 14:18:45', NULL),
+(73, 6, 'Nokia C21 Plus 3GB 64GB', '3190000.00', '2902900.00', 9, 'backend/upload/product/1663510744_nokia-c21-plus-600x600_2_1.jpg', 2, NULL, '2022-09-18 14:19:04', '2022-09-18 14:19:04', NULL),
+(74, 6, 'Nokia C20 2GB 16GB', '2290000.00', '1900700.00', 17, 'backend/upload/product/1663510768_nokia-c20-2.jpg', 2, NULL, '2022-09-18 14:19:28', '2022-09-18 14:19:28', NULL),
+(75, 6, 'Nokia C21 Plus 2GB 64GB', '2890000.00', '2398700.00', 17, 'backend/upload/product/1663510786_nokia-c21-plus-600x600_2_1.jpg', 2, NULL, '2022-09-18 14:19:46', '2022-09-18 14:19:46', NULL),
+(76, 6, 'Nokia G11 Plus 3GB 32GB', '3390000.00', '2813700.00', 17, 'backend/upload/product/1663510802_nokia-g11-plus-blue.jpg', 2, NULL, '2022-09-18 14:20:02', '2022-09-18 14:20:02', NULL),
+(77, 7, 'Realme C35 4GB 64GB', '4290000.00', '3989700.00', 7, 'backend/upload/product/1663510886_frame3935-640x640.png', 2, NULL, '2022-09-18 14:21:26', '2022-09-18 14:21:26', NULL),
+(78, 7, 'Realme C11 (2021)', '2990000.00', '2392000.00', 20, 'backend/upload/product/1663510906_download_15_5.jpg', 2, NULL, '2022-09-18 14:21:46', '2022-09-18 14:21:46', NULL),
+(79, 7, 'Realme 8', '7290000.00', '6415200.00', 12, 'backend/upload/product/1663510922_realme-8-1_2.png', 2, NULL, '2022-09-18 14:22:02', '2022-09-18 14:22:02', NULL),
+(80, 7, 'Realme 9 Pro', '7990000.00', '7191000.00', 10, 'backend/upload/product/1663510939_t_i_xu_ng_2__3_6.png', 2, NULL, '2022-09-18 14:22:19', '2022-09-18 14:22:19', NULL),
+(81, 7, 'Realme 9i 6GB 128GB', '6490000.00', '5321800.00', 18, 'backend/upload/product/1663510955_real_me_pro_002.jpg', 2, NULL, '2022-09-18 14:22:35', '2022-09-18 14:22:35', NULL),
+(82, 7, 'Realme 9 Pro Plus', '9990000.00', '8991000.00', 10, 'backend/upload/product/1663510972_9_ro_plus.png', 2, NULL, '2022-09-18 14:22:52', '2022-09-18 14:22:52', NULL),
+(83, 7, 'Realme C11 2021 4GB 64GB', '3790000.00', '2690900.00', 29, 'backend/upload/product/1663510998_realme-c11-2021-gray-600x600_2.jpg', 2, NULL, '2022-09-18 14:23:18', '2022-09-18 14:23:18', NULL),
+(84, 7, 'Nubia Z40S Pro', '10000000.00', '10000000.00', 0, 'backend/upload/product/1663511017__oor.png', 2, NULL, '2022-09-18 14:23:37', '2022-09-18 14:23:37', NULL),
+(85, 8, 'TCL 305 Chính Hãng', '3000000.00', '3000000.00', 0, 'backend/upload/product/1663511152_tcl-305-didongviet.webp', 2, NULL, '2022-09-18 14:25:52', '2022-09-18 14:25:52', NULL),
+(86, 8, 'TCL 30 SE Chính Hãng', '4000000.00', '3600000.00', 10, 'backend/upload/product/1663511171_tcl-30-se-didongviet.webp', 2, NULL, '2022-09-18 14:26:11', '2022-09-18 14:26:11', NULL),
+(87, 8, 'TCL 30 plus Chính Hãng', '5200000.00', '4420000.00', 15, 'backend/upload/product/1663511189_tcl-30-plus-didongviet.webp', 2, NULL, '2022-09-18 14:26:29', '2022-09-18 14:26:29', NULL);
 
 -- --------------------------------------------------------
 
@@ -428,7 +453,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 
 --
 -- AUTO_INCREMENT cho bảng `user`

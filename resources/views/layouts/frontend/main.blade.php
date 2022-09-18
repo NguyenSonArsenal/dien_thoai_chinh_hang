@@ -213,7 +213,7 @@
             </div>
             <div id="foot-bot">
                 <div class="wp-inner">
-                    <p id="copyright">© Bản quyền thuộc về mubaohiem</p>
+                    <p id="copyright">© Bản quyền thuộc về điện thoại chính hãng</p>
                 </div>
             </div>
         </div>
