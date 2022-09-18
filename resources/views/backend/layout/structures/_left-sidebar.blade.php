@@ -16,19 +16,19 @@
                     </a>
                 </li>
 
-                <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark" href="{{ route('be.branch.index') }}">
-                        <i class="mdi mdi-view-dashboard"></i>
-                        <span class="hide-menu">Quản lý thương hiệu</span>
-                    </a>
-                </li>
-
                 {{--<li class="sidebar-item">--}}
-                    {{--<a class="sidebar-link waves-effect waves-dark" href="{{ route('be.category.index') }}">--}}
+                    {{--<a class="sidebar-link waves-effect waves-dark" href="{{ route('be.branch.index') }}">--}}
                         {{--<i class="mdi mdi-view-dashboard"></i>--}}
-                        {{--<span class="hide-menu">Quản lý danh mục</span>--}}
+                        {{--<span class="hide-menu">Quản lý thương hiệu</span>--}}
                     {{--</a>--}}
                 {{--</li>--}}
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark" href="{{ route('be.category.index') }}">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span class="hide-menu">Quản lý danh mục</span>
+                    </a>
+                </li>
 
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark" href="{{ route('be.product.index') }}">

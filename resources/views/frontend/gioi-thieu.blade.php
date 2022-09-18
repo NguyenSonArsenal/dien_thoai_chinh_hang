@@ -17,13 +17,13 @@
     </div>
     <div class="section-detail">
         <div class="detail">
-            <p>Cửa hàng mũ bảo hiểm được thành lập tháng 8 năm 2022,
+            <p>Cửa hàng điện thoại chính hãng được thành lập tháng 8 năm 2022,
                 là cửa hàng chuyên buôn bán các sản phẩm
                 chất lượng chính hãng và các phụ kiện chuyên dụng
-                cho các sản phẩm mũ bảo hiểm …
+                cho các sản phẩm điện thoại chính hãng …
             </p>
 
-            <p> Mũ bảo  luôn tập trung xây dựng dịch vụ khách hàng khác
+            <p> Điện thoại chính hãng luôn tập trung xây dựng dịch vụ khách hàng khác
                 biệt với chất lượng vượt trội, phù hợp với văn hoá, đặt khách hàng
                 làm trung tâm trong mọi suy nghĩ và hành động của cửa hàng. Mũ bảo
                 sẽ cung cấp tới mọi tầng lớp khách hàng những trải nghiệm mua sắm tích
@@ -33,7 +33,7 @@
             </p>
 
             <p>Sự tin tưởng và ủng hộ của khách hàng trong suốt thời gian qua là
-                nguồn động viên to lớn trên bước đường phát triển của công ty mũ bảo hiểm. Chúng
+                nguồn động viên to lớn trên bước đường phát triển của công ty điện thoại chính hãng. Chúng
                 tôi xin hứa sẽ không ngừng hoàn thiện, phục vụ khách hàng
                 tốt nhất để luôn xứng đáng với niềm tin ấy.
             </p>

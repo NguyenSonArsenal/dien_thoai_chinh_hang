@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="/client/assets/images/favicon.png" rel="icon" type="image/png">
+    <link href="{{ asset('image/logo.png') }}" rel="icon" type="image/png">
     <title>Điện thoại chính hãng</title>
     <link href="/backend/css/theme/style.min.css" rel="stylesheet">
     <link href="/backend/libs/select2/dist/css/select2.min.css" rel="stylesheet">

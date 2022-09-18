@@ -43,6 +43,14 @@
                                                         <input type="text" class="form-control" name="name" required placeholder="Nhập tên" value="{{ $data->name }}">
                                                     </div>
                                                 </div>
+
+                                                <div class="form-group row">
+                                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ảnh đại diện *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="file" name="avatar" accept="image/*"> <br>
+                                                        <img src="{{ asset($data->avatar) }}" alt="" width="100px">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

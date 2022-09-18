@@ -53,7 +53,7 @@
                                                 <div class="form-group row">
                                                     <label for="fname" class="col-sm-3 text-right control-label col-form-label">Mô tả ngắn</label>
                                                     <div class="col-sm-8">
-                                                        <textarea  type="text" class="form-control" maxlength="255" rows="5"
+                                                        <textarea  type="text" class="form-control" rows="10"
                                                                    name="sort_describe" placeholder="Nhập mô tả ngắn">{{ old('sort_describe') }} </textarea>
                                                     </div>
                                                 </div>
@@ -64,26 +64,10 @@
                                                     <label class="col-md-3 text-right control-label col-form-label">Danh mục *</label>
                                                     <div class="col-md-8">
                                                         <div class="my-select2">
-                                                            <select class="select2-category-course select2-category-course-wrapper select2-wrapper" name="category_id">
+                                                            <select class="select2-category-course select2-category-course-wrapper select2-wrapper" name="category_id" required>
                                                                 <option selected readonly value="">--- Vui lòng chọn ---</option>
                                                                 @foreach($category as $item)
                                                                     <option value = "{{ arrayGet($item, 'id') }}" {{ old('category_id') == arrayGet($item, 'id') ? "selected" : '' }}>
-                                                                        {{ arrayGet($item, 'name') }}
-                                                                    </option>
-                                                                @endforeach
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group row">
-                                                    <label class="col-md-3 text-right control-label col-form-label">Thương hiệu *</label>
-                                                    <div class="col-md-8">
-                                                        <div class="my-select2">
-                                                            <select class="select2-category-course select2-category-course-wrapper select2-wrapper" name="branch_id">
-                                                                <option selected readonly value="">--- Vui lòng chọn ---</option>
-                                                                @foreach($branch as $item)
-                                                                    <option value = "{{ arrayGet($item, 'id') }}" {{ old('branch_id') == arrayGet($item, 'id') ? "selected" : '' }}>
                                                                         {{ arrayGet($item, 'name') }}
                                                                     </option>
                                                                 @endforeach

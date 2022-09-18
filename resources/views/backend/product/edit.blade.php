@@ -98,22 +98,6 @@
                                                     </div>
 
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 text-right control-label col-form-label">Thương hiệu *</label>
-                                                        <div class="col-md-8">
-                                                            <div class="my-select2">
-                                                                <select class="select2-category-course select2-category-course-wrapper select2-wrapper" name="branch_id">
-                                                                    <option selected readonly value="">--- Vui lòng chọn ---</option>
-                                                                    @foreach($branch as $item)
-                                                                        <option value = "{{ arrayGet($item, 'id') }}" {{ oldInput(old('branch_id'), $data->branch_id) == arrayGet($item, 'id') ? "selected" : '' }}>
-                                                                            {{ arrayGet($item, 'name') }}
-                                                                        </option>
-                                                                    @endforeach
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row">
                                                         <label class="col-md-3 text-right control-label col-form-label">Nổi bật</label>
                                                         <div class="col-md-8">
                                                             <div class="my-select2">

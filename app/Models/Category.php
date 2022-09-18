@@ -2,14 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 class Category extends BaseModel
 {
     protected $table = 'category';
 
     protected $fillable = [
-        'name', 'slug', 'parent_id', 'level'
+        'name', 'slug', 'parent_id', 'level', 'avatar'
     ];
 
     public function parent()

@@ -89,10 +89,8 @@
                                     <thead>
                                         <tr>
                                             <th scope="col" width="50px">STT</th>
-                                            <th scope="col" width="50px">ID</th>
                                             <th scope="col" width="300px">Tên</th>
                                             <th scope="col">Danh mục</th>
-                                            <th scope="col">Thương hiệu</th>
                                             <th scope="col">Ảnh đại diện</th>
                                             <th scope="col">Giá (VNĐ)</th>
                                             <th scope="col">Nổi bật</th>
@@ -103,10 +101,8 @@
                                     @foreach($list as $key => $entity )
                                         <tr>
                                             <td>{{ getSTTBackend($list, $key) }}</td>
-                                            <td>{{ $entity->id }}</td>
                                             <td>{{ $entity->name }}</td>
                                             <td>{{ !empty($entity->category->name) ? $entity->category->name : "" }}</td>
-                                            <td>{{ !empty($entity->branch->name) ? $entity->branch->name : "" }}</td>
                                             <td>
                                                 @if ($entity->avatar)
                                                     <img src="{{ asset($entity->avatar) }}" alt="" width="50px">

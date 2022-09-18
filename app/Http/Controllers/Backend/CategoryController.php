@@ -36,6 +36,21 @@ class CategoryController extends Controller
     {
         $data = new Category();
         $params = request()->all();
+
+        if (request()->hasFile('avatar')) {
+            $fileName = time() . "_" . request()->file('avatar')->getClientOriginalName();
+            $pathTmp = 'backend/upload/category';
+            $uploadPath = public_path($pathTmp); // Folder upload path
+
+            if (!file_exists($uploadPath)) {
+                mkdir($uploadPath, 0777, true);
+            }
+
+            request()->file('avatar')->move($uploadPath, $fileName);
+            $thumbnail = $pathTmp . '/' . $fileName;
+            $params['avatar'] = $thumbnail;
+        }
+
         $params['slug'] = Str::slug(request('name'));
         $data->fill($params);
         $data->save();
@@ -52,7 +67,22 @@ class CategoryController extends Controller
     {
         $data = Category::findOrFail($id);
         $data->name = request('name');
+
+        if (request()->hasFile('avatar')) {
+            $fileName = time() . "_" . request()->file('avatar')->getClientOriginalName();
+            $pathTmp = 'backend/upload/category';
+            $uploadPath = public_path($pathTmp); // Folder upload path
+
+            if (!file_exists($uploadPath)) {
+                mkdir($uploadPath, 0777, true);
+            }
+
+            request()->file('avatar')->move($uploadPath, $fileName);
+            $thumbnail = $pathTmp . '/' . $fileName;
+        }
+
         $data->slug = Str::slug(request('name'));
+        $data->avatar = !empty($thumbnail) ? $thumbnail : $data->avatar;
         $data->save();
         return redirect()->route('be.category.index')->with('notification_success', 'Thành công');
     }

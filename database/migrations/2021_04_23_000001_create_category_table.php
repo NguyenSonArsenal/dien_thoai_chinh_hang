@@ -17,6 +17,7 @@ class CreateCategoryTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('slug')->nullable();
+            $table->string('avatar')->nullable();
             $table->integer('parent_id')->nullable()->default(getConfig('parent_id_default'));
             $table->integer('level')->nullable()->default(getConfig('category_level_default'));
             $table->timestamps();

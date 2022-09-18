@@ -42,6 +42,13 @@
                                                         <input type="text" class="form-control" name="name" value="{{old('name')}}" required placeholder="Nhập tên">
                                                     </div>
                                                 </div>
+
+                                                <div class="form-group row">
+                                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ảnh đại diện *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="file" name="avatar" accept="image/*" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -28,10 +28,6 @@ class ProductController extends Controller
             $list->where('category_id', request('category_id'));
         }
 
-        if (request('branch_id')) {
-            $list->where('branch_id', request('branch_id'));
-        }
-
         if (request('name')) {
             $list->where('name', 'like', '%' . request( 'name') . '%');
         }

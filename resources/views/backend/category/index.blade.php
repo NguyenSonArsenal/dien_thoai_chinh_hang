@@ -49,18 +49,20 @@
                                 <table class="table table-striped table-bordered dataTable" role="grid">
                                     <thead>
                                         <tr>
-                                            <th scope="col" width="50px">ID</th>
                                             <th scope="col">Tên</th>
                                             <th scope="col">Đường dẫn</th>
+                                            <th scope="col">Ảnh đại diện</th>
                                             <th scope="col">Hành động</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($list as $key => $entity )
                                         <tr>
-                                            <td>{{ $entity->id }}</td>
                                             <td>{{ $entity->name }}</td>
-                                            <td>{{ $entity->slug }}</td>
+                                            <td>{{ $entity->slug }}
+                                            <td>
+                                                <img src="{{ asset($entity->avatar) }}" width="60px" alt="">
+                                            </td>
                                             <td>
                                                 <div class="comment-footer d-flex">
                                                     <a href="{{ route('be.category.edit', ['category' => $entity->id]) }}">

@@ -2,11 +2,11 @@
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
-    <title>Mũ bảo hiểm</title>
+    <title>Điện thoại chính hãng</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="TzivisrDQXT5IWYg46zXshgyZAFn8LYCqFgz72qR">
-    <link rel="icon" type="image/png" href="{{ asset('image/2.png') }}"/>
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendor/bootstrap4.5.2/bootstrap-theme.min.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendor/bootstrap4.5.2/bootstrap.min.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/theme/css/reset.css') }}"/>
@@ -183,8 +183,8 @@
             <div id="foot-body">
                 <div class="wp-inner clearfix">
                     <div class="block" id="info-company">
-                        <h3 class="title">CỬA HÀNG MŨ BẢO HIỂM</h3>
-                        <p class="desc">MŨ BẢO HIỂM luôn cung cấp luôn là sản phẩm chính hãng có thông tin rõ ràng, chính
+                        <h3 class="title">CỬA HÀNG ĐIỆN THOẠI CHÍNH HÃNG</h3>
+                        <p class="desc">ĐIỆN THOẠI CHÍNH HÃNG luôn cung cấp luôn là sản phẩm chính hãng có thông tin rõ ràng, chính
                             sách ưu đãi cực lớn cho khách hàng có thẻ thành viên.</p>
                         <div id="payment">
                             <div class="thumb">
@@ -202,7 +202,7 @@
                                 <p>0123.456.789</p>
                             </li>
                             <li>
-                                <p>mubaohiem@gmail.com</p>
+                                <p>dienthoaichinhang@gmail.com</p>
                             </li>
                             <li>
                                 <a href="{{route('frontend.bao-hanh')}}">Chính sách Đổi trả & Bảo hành</a>

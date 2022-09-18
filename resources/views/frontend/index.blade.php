@@ -23,6 +23,9 @@
             <div class="item">
                 <img src="{{ asset('frontend/theme/image/slider_3.jpg') }}" alt="">
             </div>
+            <div class="item">
+                <img src="{{ asset('frontend/theme/image/slider_4.jpg') }}" alt="">
+            </div>
         </div>
     </div>
     <div class="section" id="support-wp">
