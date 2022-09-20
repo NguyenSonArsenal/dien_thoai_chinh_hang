@@ -80,6 +80,7 @@
                                             <th scope="col">Ảnh đại diện</th>
                                             <th scope="col">Giá (VNĐ)</th>
                                             <th scope="col">Nổi bật</th>
+                                            <th scope="col">Số lượng trong kho</th>
                                             <th scope="col">Hành động</th>
                                         </tr>
                                     </thead>
@@ -108,6 +109,7 @@
                                                     <span class="text-info">Không</span>
                                                 @endif
                                             </td>
+                                            <td>{{ $entity->amount }}</td>
                                             <td>
                                                 <div class="comment-footer d-flex">
                                                     <a href="{{ route('be.product.edit', ['product' => $entity->id]) }}">

@@ -7,7 +7,7 @@ class Product extends BaseModel
     protected $table = 'product';
 
     protected $fillable = [
-        'category_id', 'name', 'price_origin', 'price_sell', 'sale', 'avatar',
+        'category_id', 'name', 'price_origin', 'price_sell', 'sale', 'avatar', 'amount',
         'sort_describe', 'hot'
     ];
 

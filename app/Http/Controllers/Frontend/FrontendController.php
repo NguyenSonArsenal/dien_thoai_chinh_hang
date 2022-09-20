@@ -135,6 +135,9 @@ class FrontendController extends Controller
         $productInCarts = Product::whereIn('id', $cart)->get();
         $totalPriceCart = 0;
         foreach ($productInCarts as $item) {
+            if ($item->amount <= 0) {
+                return redirect()->back()->with('notification_error', 'Sản phẩm \'' . $item->name . '\' hết hàng');
+            }
             $tmp = $item;
             if ($tmp->price_sell) {
                 $totalPriceCart += $tmp->price_sell;
@@ -253,6 +256,9 @@ class FrontendController extends Controller
             foreach ($cart as $productId) {
                 $product = Product::where('id', $productId)->first();
                 if (!empty($product)) {
+                    $product->amount--;
+                    $product->save();
+
                     $orderDetail['order_id'] = $orderId;
                     $orderDetail['product_id'] = $productId;
                     $orderDetail['product_name'] = $product->name;

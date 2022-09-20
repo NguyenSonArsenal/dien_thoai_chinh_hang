@@ -51,6 +51,13 @@
                                                 </div>
 
                                                 <div class="form-group row">
+                                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Số lượng trong kho (*)</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="number" class="form-control" name="amount" value="" required min="1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
                                                     <label for="fname" class="col-sm-3 text-right control-label col-form-label">Mô tả ngắn</label>
                                                     <div class="col-sm-8">
                                                         <textarea  type="text" class="form-control" rows="10"

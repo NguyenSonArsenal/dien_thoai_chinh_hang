@@ -38,8 +38,8 @@
 
             <div class="info fl-right">
                 <h3 class="product-name">{{ $product->name }}</h3>
-                <h6>Thương hiệu: {{ $product->tryGet('branch')->name }}</h6>
                 <h6>Danh mục: <a href="{{ route('frontend.danh-muc', ['id' => $product->tryGet('category')->id]) }}">{{ $product->tryGet('category')->name }}</a></h6>
+                <h6 class="mt-2 mb-2">Số lượng còn lại: {{ $product->amount }}</h6>
                 <div class="desc">
                     <p>
                         {!! nl2br(e($product->sort_describe)) !!}
@@ -75,9 +75,11 @@
                             Thêm giỏ hàng
                         </button>
                     @else
-                        <button type="submit" name="btn-addx" title="Thêm giỏ hàng" class="mt-3 btn btn-danger">
-                            Thêm giỏ hàng
-                        </button>
+                        @if ($product->amount > 0)
+                            <button type="submit" name="btn-addx" title="Thêm giỏ hàng" class="mt-3 btn btn-danger">
+                                Thêm giỏ hàng
+                            </button>
+                        @endif
                     @endif
                 </form>
 
