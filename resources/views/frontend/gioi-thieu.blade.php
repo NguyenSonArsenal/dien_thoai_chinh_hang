@@ -25,9 +25,9 @@
 
             <p> Điện thoại chính hãng luôn tập trung xây dựng dịch vụ khách hàng khác
                 biệt với chất lượng vượt trội, phù hợp với văn hoá, đặt khách hàng
-                làm trung tâm trong mọi suy nghĩ và hành động của cửa hàng. Mũ bảo
+                làm trung tâm trong mọi suy nghĩ và hành động của cửa hàng. Điện thoại chính hãng
                 sẽ cung cấp tới mọi tầng lớp khách hàng những trải nghiệm mua sắm tích
-                cực, thông qua các sản phẩm Kỹ thuật số chính hãng chất
+                cực, thông qua các sản phẩm chất
                 lượng cao, giá cả cạnh tranh đi kèm dịch vụ chăm sóc khách
                 hàng thân thiện, được đảm bảo bởi uy tín của doanh nghiệp.
             </p>

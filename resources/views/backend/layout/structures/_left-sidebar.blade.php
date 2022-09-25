@@ -45,6 +45,13 @@
                 </li>
 
                 <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark" href="{{ route('be.report.index') }}">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span class="hide-menu">Báo cáo thống kê</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark" href="{{ route('be.logout') }}"
                         onclick="return confirm('Đăng xuất. Bạn có chắc chắn không?')">
                         <i class="mdi mdi-view-dashboard"></i>

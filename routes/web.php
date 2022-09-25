@@ -54,4 +54,5 @@ Route::group(['prefix'=>'management/', 'as'=>'be.', 'middleware' => ['authBacken
     Route::resource('/product', ProductController::class);
     Route::resource('/user', UserController::class);
     Route::resource('/order', OrderController::class);
+    Route::get('/report', [App\Http\Controllers\Backend\DashboardController::class, 'report'])->name('report.index');
 });

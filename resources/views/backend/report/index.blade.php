@@ -9,7 +9,7 @@
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-12 d-flex no-block align-items-center">
-                    <h4 class="page-title">Trang quản trị {{ bE()->username }}</h4>
+                    <h4 class="page-title">Báo cáo thống kê</h4>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
                             @include('backend.layout.structures._notification')
 
                             <div class="card-body__head card-body__filter">
-                                <h5 class="card-title bold">Thống kê</h5>
+                                <h5 class="card-title bold">Thống kê doanh thu</h5>
                             </div>
 
                             <div class="row">
@@ -30,7 +30,7 @@
                                     <div class="card card-hover">
                                         <div class="box bg-warning text-center">
                                             <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                            <h6 class="text-white"><a class="text-white" href="{{ route('be.user.index') }}">Người dùng<br> ({{ \App\Models\User::count() }})</a></h6>
+                                            <h6 class="text-white">Hôm nay <br> {{ $today }} </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                     <div class="card card-hover">
                                         <div class="box bg-warning text-center">
                                             <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                            <h6 class="text-white"><a class="text-white" href="{{ route('be.category.index') }}">Danh mục<br> ({{ \App\Models\Category::count() }})</a></h6>
+                                            <h6 class="text-white">Trong tuần <br> {{ $week }} </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@
                                     <div class="card card-hover">
                                         <div class="box bg-warning text-center">
                                             <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                            <h6 class="text-white"><a class="text-white" href="{{ route('be.product.index') }}">Sản phẩm <br> ({{ \App\Models\Product::count() }})</a></h6>
+                                            <h6 class="text-white">Trong tháng <br> {{ $month }} </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                     <div class="card card-hover">
                                         <div class="box bg-warning text-center">
                                             <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                            <h6 class="text-white"><a class="text-white" href="{{ route('be.order.index') }}">Đơn hàng <br> ({{\App\Models\Order::count()}})</a></h6>
+                                            <h6 class="text-white">Trong năm <br> {{ $year   }} </h6>
                                         </div>
                                     </div>
                                 </div>
