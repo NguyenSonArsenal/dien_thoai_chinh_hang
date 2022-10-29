@@ -15,11 +15,6 @@ class Product extends BaseModel
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
-
-    public function branch()
-    {
-        return $this->belongsTo(Branch::class);
-    }
 }
 
 

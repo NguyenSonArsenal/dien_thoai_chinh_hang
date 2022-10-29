@@ -13,7 +13,6 @@ class ProductController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $branch = Branch::all();
         $list = Product::orderBy('id', 'desc');
 
         if (request('id')) {
@@ -34,14 +33,13 @@ class ProductController extends Controller
 
         $list = $list->paginate(getConst('BE_PER_PAGE'));
 
-        return view('backend.product.index', compact('list', 'categories', 'branch'));
+        return view('backend.product.index', compact('list', 'categories'));
     }
 
     public function create()
     {
         $category = Category::all();
-        $branch = Branch::all();
-        return view('backend.product.create', compact('category', 'branch'));
+        return view('backend.product.create', compact('category'));
     }
 
     public function store()
@@ -74,8 +72,7 @@ class ProductController extends Controller
     {
         $data = Product::findOrFail($id);
         $category = Category::all();
-        $branch = Branch::all();
-        return view('backend.product.edit', compact('data', 'category', 'branch'));
+        return view('backend.product.edit', compact('data', 'category'));
     }
 
     public function update($id)

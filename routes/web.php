@@ -49,7 +49,6 @@ Route::post('management/login', [AuthBe::class, 'postLogin'])->name('be.login.po
 Route::group(['prefix'=>'management/', 'as'=>'be.', 'middleware' => ['authBackend']], function() {
     Route::get('/', [App\Http\Controllers\Backend\DashboardController::class, 'index'])->name('dashboard');
     Route::get('/logout', [AuthBe::class, 'logout'])->name('logout');
-    Route::resource('/branch', BranchController::class);
     Route::resource('/category', CategoryController::class);
     Route::resource('/product', ProductController::class);
     Route::resource('/user', UserController::class);
