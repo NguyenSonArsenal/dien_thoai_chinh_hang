@@ -89,7 +89,7 @@ class CategoryController extends Controller
 
     public function destroy($id)
     {
-        $model = Branch::findOrFail($id);
+        $model = Category::findOrFail($id);
         $model->delete();
         return redirect()->back()->with('notification_success', 'Thành công');
     }
