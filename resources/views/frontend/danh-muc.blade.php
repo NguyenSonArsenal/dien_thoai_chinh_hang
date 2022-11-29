@@ -92,15 +92,14 @@
                                 <img src="{{ asset('image/lap-top-default.png') }}">
                             @endif
                         </a>
-                        <a href="{{ frontendRouter('san-pham', ['id' => $product->id]) }}" title=""
-                           class="product-name text-left two_dots" style="height: 35px">{{ $product->name }}</a>
+                        <a href="{{ frontendRouter('san-pham', ['id' => $product->id]) }}" class="product-name text-left two_dots" style="height: 35px">{{ $product->name }}</a>
                         <div class="price text-left">
-                            <span class="new">{{ formatPriceCurrency($product->price_origin) }}đ</span>
+                            <span class="new" style="text-decoration: line-through">{{ formatPriceCurrency($product->price_origin) }}đ</span>
                         </div>
 
                         @if ($product->sale)
                             <div class="price text-left text-muted">
-                                <span style="text-decoration: line-through">{{ formatPriceCurrency($product->price_origin / 100 * (100 - $product->sale)) }}đ</span>
+                                <span>{{ formatPriceCurrency($product->price_origin / 100 * (100 - $product->sale)) }}đ</span>
                             </div>
                             <div class="price text-left text-danger">
                                 <small>Khuyến mại: {{ formatPriceCurrency($product->sale) }}%</small>
